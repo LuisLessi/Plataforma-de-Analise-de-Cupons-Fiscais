@@ -1,0 +1,9 @@
+# Requirements gerado automaticamente pelo run.py
+# Libs essenciais para o projeto de Cupons Fiscais
+
+flask==3.1.2
+pandas==2.3.3
+selenium==4.37.0
+lxml==6.0.2
+requests==2.32.5
+beautifulsoup4==4.14.2

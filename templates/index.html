@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard Cupons Fiscais</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .query-section {
+            background: #e8f4fd;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .chart-container {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .chart-container h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        input[type="text"] {
+            padding: 10px;
+            width: 400px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        button {
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        #resposta {
+            margin-top: 10px;
+            padding: 10px;
+            background: white;
+            border-radius: 5px;
+            min-height: 20px;
+        }
+        .suggestions {
+            margin-top: 10px;
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>📊 Plataforma de Análise de Cupons Fiscais</h1>
+        <p>Dashboard interativo para análise de dados de cupons fiscais eletrônicos</p>
+    </div>
+
+    <!-- Seção de Consulta em Linguagem Natural -->
+    <div class="query-section">
+        <h2>🔍 Consulta em Linguagem Natural</h2>
+        <input type="text" id="perguntaInput" placeholder="Ex: Qual o valor total vendido pela empresa X...">
+        <button onclick="fazerPergunta()">Pesquisar</button>
+        
+        <div class="suggestions">
+            <strong>Sugestões:</strong><br>
+            • "Qual o valor total vendido pela empresa [nome]"<br>
+            • "Quais empresas compraram o produto [produto]"
+        </div>
+        
+        <div id="resposta"></div>
+    </div>
+
+    <!-- Grid de Dashboards -->
+    <div class="dashboard-grid">
+        <!-- Dashboard 1: Top Produtos -->
+        <div class="chart-container">
+            <h3>🏆 Top 5 Produtos Mais Vendidos (Valor)</h3>
+            <canvas id="topProductsChart" height="250"></canvas>
+        </div>
+
+        <!-- Dashboard 2: Faturamento Diário -->
+        <div class="chart-container">
+            <h3>📈 Faturamento Total por Dia</h3>
+            <canvas id="revenueChart" height="250"></canvas>
+        </div>
+
+        <!-- Dashboard 3: Análise de Descontos -->
+        <div class="chart-container">
+            <h3>💰 Análise de Descontos</h3>
+            <canvas id="discountChart" height="250"></canvas>
+        </div>
+
+        <!-- Dashboard 4: Produtos por Quantidade -->
+        <div class="chart-container">
+            <h3>📦 Top 5 Produtos (Quantidade)</h3>
+            <canvas id="quantityChart" height="250"></canvas>
+        </div>
+
+        <!-- Dashboard 5: Vendas por CFOP -->
+        <div class="chart-container">
+            <h3>🏷️ Vendas por CFOP</h3>
+            <canvas id="cfopChart" height="250"></canvas>
+        </div>
+
+        <!-- Dashboard 6: Média de Valor por Produto -->
+        <div class="chart-container">
+            <h3>⚖️ Média de Valor por Produto</h3>
+            <canvas id="avgValueChart" height="250"></canvas>
+        </div>
+    </div>
+
+    <script src="/static/dashboard.js"></script>
+</body>
+</html>

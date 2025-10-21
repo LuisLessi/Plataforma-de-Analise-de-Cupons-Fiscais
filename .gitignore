@@ -1,0 +1,78 @@
+# Diretórios do Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Ambiente virtual
+venv/
+env/
+ENV/
+.env
+.venv
+
+# Banco de dados
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+logs/
+
+# Arquivos temporários
+*.tmp
+*.temp
+.cache
+
+# Sistema
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Selenium/WebDriver
+webdriver/
+chromedriver*
+geckodriver*
+edgedriver*
+
+# Arquivos de configuração local
+config_local.py
+settings_local.py
+
+# Arquivos de dados sensíveis
+*.key
+*.pem
+*.cert
