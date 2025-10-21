@@ -1,6 +1,7 @@
 # Plataforma de Análise de Cupons Fiscais
 
 Sistema completo para ingestão, enriquecimento e análise de Cupons Fiscais Eletrônicos (CF-e).
+
 <img width="506" height="386" alt="image" src="https://github.com/user-attachments/assets/3201a148-7345-4e69-9eb8-9a0308ad430a" />
 
 
