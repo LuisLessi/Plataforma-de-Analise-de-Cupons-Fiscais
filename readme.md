@@ -1,6 +1,8 @@
 # Plataforma de Análise de Cupons Fiscais
 
 Sistema completo para ingestão, enriquecimento e análise de Cupons Fiscais Eletrônicos (CF-e).
+<img width="506" height="386" alt="image" src="https://github.com/user-attachments/assets/3201a148-7345-4e69-9eb8-9a0308ad430a" />
+
 
 ## Funcionalidades
 
@@ -52,7 +54,8 @@ python app.py
 http://localhost:5000
 
 ## Estrutura do Projeto
-<img width="749" height="345" alt="image" src="https://github.com/user-attachments/assets/a81ae249-b15e-471f-9521-b20c212fcca7" />
+<img width="751" height="340" alt="image" src="https://github.com/user-attachments/assets/bd040e73-faff-446c-a71e-8e5f9e5a5d04" />
+
 
 ## Endpoints da API
 
